@@ -1,0 +1,13 @@
+fullName:
+  name: deny-all-traffic
+  orgId: e894ade7-491d-4162-b9b6-e10dbc145f2c
+  workspaceName: argon
+objectMeta:
+  creationTime: "2020-04-14T01:16:35.488913Z"
+  resourceVersion: "1"
+  uid: p:01E5V44SS3GEZDVZ8Q5GZYF3ZK
+  updateTime: "2020-04-14T01:16:35.488913Z"
+spec:
+  policyType: network-policy
+  recipeName: deny-all
+  recipeVersion: v1
