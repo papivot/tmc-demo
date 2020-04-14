@@ -1,3 +1,5 @@
+#!/bin/sh
+
 # Assume one cluster is already attached to astroids clustergroup. 
 # Assume that cluster's operations NS is already added to the argon workspace
 # List all cluster
