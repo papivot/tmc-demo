@@ -1,0 +1,14 @@
+fullName:
+  name: allow-gcr-only
+  orgId: e894ade7-491d-4162-b9b6-e10dbc145f2c
+  workspaceName: argon
+spec:
+  inputValues:
+    registry_repos:
+      list:
+        values:
+        - str: '*.gcr.io'
+        - str: gcr.io
+  policyType: image-policy
+  recipeName: allow-registry
+  recipeVersion: v1
