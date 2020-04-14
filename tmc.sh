@@ -38,4 +38,5 @@ tmc workspace network-policy create -f denyall-networkpolicy.yaml
 curl API_EP1
 curl API_EP2
 
-tmc workspace network-policy delete allow-gcr-only argon
+# Delete tha policy and show app is running
+tmc workspace network-policy delete deny-all-traffic argon
