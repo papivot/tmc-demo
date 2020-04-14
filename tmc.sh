@@ -15,7 +15,7 @@ tmc cluster attach -k ~/.kube/config -n tkg-workload-cluster -g astroids
 tmc cluster namespace attach -c tkg-workload-cluster -k argon -n operations
 
 # Create Policy for registry access (gcr.io & *.gcr.io)
-tmc workspace image-policy create -f gcr.yaml
+tmc workspace image-policy create -f allowonly-gcr.yaml
 
 # Run the application 
 kubectl apply -f k8s-operations.yaml
@@ -38,4 +38,4 @@ tmc workspace network-policy create -f denyall-networkpolicy.yaml
 curl API_EP1
 curl API_EP2
 
-tmc workspace image-policy delete allow-gcr-only argon
+tmc workspace network-policy delete allow-gcr-only argon
